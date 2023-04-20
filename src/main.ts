@@ -45,8 +45,6 @@ async function run(): Promise<void> {
     }
 
     // @ts-expect-error
-    // core.setSecret(resp.token);
-    // @ts-expect-error
     core.setOutput('token', resp.token);
   } catch (error) {
     if (error instanceof Error) {
